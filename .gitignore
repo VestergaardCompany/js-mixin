@@ -1,0 +1,11 @@
+/vendor
+.DS_Store
+.idea/
+.settings/
+Thumbs.db
+/.buildpath
+/.project
+.env
+/node_modules
+npm-debug.log
+/build
