@@ -14,8 +14,9 @@
   ],
   "author": "Alin Eugen Deac <ade@vestergaardcompany.com>",
   "license": "GPL-3.0",
+  "private": false,
   "publishConfig": {
-    "registry": " https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
 
