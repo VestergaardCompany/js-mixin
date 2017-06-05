@@ -17,7 +17,7 @@ class Builder {
     /**
      * Create a new Builder instance
      *
-     * @param {function} [superClass=class {}]
+     * @param {Function} [superClass=class {}]
      */
     constructor(superClass){
         this.superClass = superClass || class {};
@@ -26,9 +26,9 @@ class Builder {
     /**
      * Mixin one or more mixin-classes
      *
-     * @param {...function} mixins
+     * @param {Array.<Function>} mixins
      *
-     * @return {*}
+     * @return {Function} A supclass with mixins applied
      */
     with(...mixins){
         return mixins.reduce((c, m) => {
