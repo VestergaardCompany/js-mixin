@@ -1,8 +1,6 @@
 'use strict';
 
-import RegularMixinA from './Mixins/RegularMixinA';
-import RegularMixinB from './Mixins/RegularMixinB';
-import mix from './../../src/mix';
+import Box from './Classes/Box';
 
 /**
  * Test Helper
@@ -18,17 +16,6 @@ class TestHelper {
      * @return {Box}
      */
     static makeClassWithRegularMixins(){
-        // A class using regular mixin
-        class Box extends mix(class{}).with(
-            RegularMixinA,
-            RegularMixinB
-        ){
-            constructor(){
-                super();
-                console.log('Box');
-            }
-        }
-
         return new Box();
     }
 }
