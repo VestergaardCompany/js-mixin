@@ -17,13 +17,13 @@ export const ORIGINAL_MIXIN = Symbol('originalMixin');
  * @return {Function} Wrapper
  */
 const wrap = (mixinClass, wrapper) => {
-  Object.setPrototypeOf(wrapper, mixinClass);
+    Object.setPrototypeOf(wrapper, mixinClass);
 
-  if( ! mixinClass[ORIGINAL_MIXIN]){
+    if (!mixinClass[ORIGINAL_MIXIN]) {
         mixinClass[ORIGINAL_MIXIN] = mixinClass;
-  }
+    }
 
-  return wrapper;
+    return wrapper;
 };
 
 export default wrap;
