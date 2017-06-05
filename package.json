@@ -1,6 +1,6 @@
 {
   "name": "@vcas/js-mixin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Mixin utilities",
   "homepage": "https://support.webdts.eu/projects/js-application",
   "main": "index.js",
@@ -18,9 +18,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-plugin-transform-builtin-extend": "^1.1.0",
     "babel-preset-es2015-rollup": "^3.0.0",
