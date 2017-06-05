@@ -11,6 +11,6 @@ import Builder from './Builder';
  *
  * @param {function} [superClass=class {}]
  */
-let mix = (superClass) => new Builder(superClass);
+const mix = (superClass) => new Builder(superClass);
 
 export default mix;
