@@ -3,7 +3,7 @@
 import TestHelper from './../helpers/TestHelper';
 import faker from 'faker';
 
-describe('Mixin', function(){
+describe('Builder Test', function(){
 
     it('can create instance with regular defined mixin', function () {
         let box = TestHelper.makeClassWithRegularMixins();
@@ -30,11 +30,4 @@ describe('Mixin', function(){
         expect(box.width).toBe(width, 'Incorrect width - mixin does not work!');
         expect(box.height).toBe(height, 'Incorrect height - mixin does not work!');
     });
-
-    // it('Is instance of check', function () {
-    //     let box = new LargeBox();
-    //
-    //     expect(box instanceof ConfigAware).toBe(true, 'Is not instance of Config Aware?!');
-    //     expect(box instanceof IoCAware).toBe(true, 'Is not instance of Config Aware?!');
-    // });
 });
