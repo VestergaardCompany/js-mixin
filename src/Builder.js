@@ -33,12 +33,12 @@ class Builder {
     with(...mixins){
         return mixins.reduce((c, m) => {
 
-            if(typeof m !== "function"){
+            if(typeof m !== 'function'){
                 return c;
             }
 
             return m(c);
-        }, this.superClass)
+        }, this.superClass);
     }
 }
 
