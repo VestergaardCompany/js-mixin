@@ -1,6 +1,7 @@
 'use strict';
 
 import Box from './Classes/Box';
+import LargeBox from './Classes/LargeBox';
 
 /**
  * Test Helper
@@ -17,6 +18,18 @@ class TestHelper {
      */
     static makeClassWithRegularMixins(){
         return new Box();
+    }
+
+    /**
+     * Returns a new instance that extends a class using
+     * mixin-classes
+     *
+     * @see makeClassWithRegularMixins()
+     *
+     * @return {LargeBox}
+     */
+    static makeRegularSubClass(){
+        return new LargeBox();
     }
 }
 
