@@ -1,6 +1,6 @@
 {
   "name": "@vestergaard-company/js-mixin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mixin utilities",
   "homepage": "https://support.webdts.eu/projects/js-application",
   "main": "index.js",
