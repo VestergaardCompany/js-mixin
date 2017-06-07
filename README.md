@@ -40,7 +40,7 @@ You can declare a mixin via the `DeclareMixin` method. It will ensure that you c
 
 ```javascript
 
-import { DeclareMixin } from '@vcas/js-mixin';
+import { DeclareMixin } from '@vestergaard-company/js-mixin';
 
 export default DeclareMixin((superClass) => class WidthAware extends superClass {
 
@@ -61,7 +61,7 @@ To apply your custom mixin, use the `mix` method, just like the original `mixwit
 ```javascript
 
 import WidthAware from './MyMixins/WidthAware';
-import mix from '@vcas/js-mixin';
+import mix from '@vestergaard-company/js-mixin';
 
 class Box extends mix(class {}).width(
     WidthAware
@@ -81,7 +81,7 @@ You can of course also apply multiple mixins, using the same method.
 import WidthAware from './MyMixins/WidthAware';
 import HeightAware from './MyMixins/HeightAware';
 import PriceAware from './MyMixins/PriceAware';
-import mix from '@vcas/js-mixin';
+import mix from '@vestergaard-company/js-mixin';
 
 class Box extends mix(class {}).width(
     WidthAware,
